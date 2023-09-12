@@ -1,0 +1,130 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+     clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background: #F5EDED;
+     padding: 2em;
+     font-family: 'Mulish', sans-serif;
+}
+
+body>h1 {
+     text-align: center;
+     margin-bottom: 5rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {}
+
+.container {
+     max-width: 100%;
+     width: 600px;
+     background-color: #FFFFFF;
+     color: #3E3636;
+     margin: 0 auto;
+     border-radius: 8px;
+     padding: 2em;
+     position: relative;
+}
+
+.search-box {
+     margin: 0 auto;
+     text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     justify-content: center;
+}
+
+input {
+     border: none;
+     color: inherit;
+     border-bottom: 2px solid #000;
+     background: transparent;
+     margin-right: 2em;
+}
+
+input:focus,
+input:active {
+
+     outline: 0;
+}
+
+button.search {
+     padding: .5em;
+     background: #D72323;
+     font-size: 1.2em;
+     border-radius: 8px;
+     cursor: pointer;
+     color: #fff;
+     border: none;
+
+}
+
+button:active {
+     transition: .3s ease-in-out;
+     scale: 0.97;
+}
+
+.output {
+     margin-top: 3rem;
+     position: relative;
+}
+
+span {
+     color: #606060;
+     font-size: .9rem;
+     display: inline-block;
+     margin-right: 1em;
+}
+
+.meaning {
+     font-size: 1.125em;
+     font-weight: 500;
+}
+
+.example {
+     border-left: 8px solid #D72323;
+     padding-left: 1em;
+     margin-top: 1em;
+}
+
+.play-sound {
+     position: absolute;
+     background: transparent;
+     right: 1%;
+     top: 50%;
+     border: none;
+     cursor: pointer;
+}
+
+.hidden {
+     visibility: hidden;
+}
+
+footer {}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
